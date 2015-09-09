@@ -1,4 +1,5 @@
 ## move to a proper working directory
+## To use this script you have to copy the uncompressed file household_power_consumption.txt with data in the working directory
 setwd("/home/bompiani/Dropbox/Exploratory Data Analisys/ExData_Plotting1/")
 
 ## load data in memory
