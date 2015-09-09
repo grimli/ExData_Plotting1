@@ -7,8 +7,11 @@ values <- read.csv2(file = "./household_power_consumption.txt" , sep =";", na.st
 values$DateTime <- strptime(paste(values[,1], values[,2]), format = "%d/%m/%Y %H:%M:%S")
 #select rilevant values
 values <- subset(values, DateTime >= "2007-02-01" & DateTime <= "2007-02-03")
+
+#create plot on video
 hist(values$Global_active_power, col="red", main = "Global Active Power", xlab ="Global Active Power (kilowatts)")
 
+#export plot to file
 png(filename = "plot1.png",width = 480, height = 480)
 hist(values$Global_active_power, col="red", main = "Global Active Power", xlab ="Global Active Power (kilowatts)")
 dev.off()
