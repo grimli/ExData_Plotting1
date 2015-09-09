@@ -11,7 +11,7 @@ values$DateTime <- strptime(paste(values[,1], values[,2]), format = "%d/%m/%Y %H
 #select rilevant values
 values <- subset(values, DateTime >= "2007-02-01" & DateTime <= "2007-02-03")
 
-# Set system values to get labels in the correct lenguage
+# Set system values to get labels in the correct language
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 
 #create plot on video
