@@ -1,6 +1,8 @@
-## move to a proper working directory
 ## To use this script you have to copy the uncompressed file household_power_consumption.txt with data in the working directory
-setwd("/home/bompiani/Dropbox/Exploratory Data Analisys/ExData_Plotting1/")
+
+## move to a proper working directory
+## uncomment the next line and insert the correct path to the R script 
+## setwd("<path to the working directory>")
 
 ## load data in memory
 values <- read.csv2(file = "./household_power_consumption.txt" , sep =";", na.strings="?", dec=".", colClasses=c("character","character","real","real","real","real","real","real","real"))
