@@ -8,3 +8,7 @@ values$DateTime <- strptime(paste(values[,1], values[,2]), format = "%d/%m/%Y %H
 #select rilevant values
 values <- subset(values, DateTime >= "2007-02-01" & DateTime <= "2007-02-03")
 hist(values$Global_active_power, col="red", main = "Global Active Power", xlab ="Global Active Power (kilowatts)")
+
+png(filename = "plot1.png",width = 480, height = 480)
+hist(values$Global_active_power, col="red", main = "Global Active Power", xlab ="Global Active Power (kilowatts)")
+dev.off()
